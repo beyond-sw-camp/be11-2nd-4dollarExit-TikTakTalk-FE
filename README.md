@@ -130,38 +130,60 @@
 
 ## 🖥️ 프론트엔드 시스템 아키텍처
 
+<details>
+<summary>사용자 접근 흐름 보기</summary>
+
 ### ✅ 사용자 접근 흐름
 1. 사용자가 **도메인**에 접속하면 **Route 53**을 통해 라우팅된다.
 2. 이후 **CloudFront (CDN)** 가 요청을 받아 **캐싱된 데이터가 있는지 확인**한다.
    - 캐싱된 데이터가 있다면 **즉시 사용자에게 화면 제공**한다.
    - 캐싱된 데이터가 없다면 **S3에서 정적 파일을 가져와 CloudFront에 캐싱한 뒤** 사용자에게 응답한다.
+</details>
+
+<details>
+<summary>개발자 배포 흐름 보기</summary>
 
 ### ✅ 개발자 배포 흐름
 1. 개발자가 **소스 코드를 Git 저장소에 Push**하면 **GitHub Actions**가 자동 실행된다.
 2. GitHub Actions는 빌드된 정적 파일(`dist` 폴더)을 **S3 버킷**에 업로드한다.
 3. 새로운 파일이 배포된 후, 기존 **CloudFront 캐시를 무효화**하여 최신 버전의 프론트엔드가 사용자에게 제공된다.
+</details>
 
 ---
 
 ## 🖥️ 백엔드 시스템 아키텍처
 
+<details>
+<summary>사용자 접근 흐름 보기</summary>
+
 ### ✅ 사용자 접근 흐름
 1. 사용자가 **도메인을 통해 요청**을 보내면, **Route 53**을 통해 라우팅된다.
 2. 요청은 **Application Load Balancer (ALB)**로 전달되며, **Ingress**를 통해 Kubernetes 클러스터 내 적절한 서비스로 라우팅된다.
 3. Kubernetes 서비스는 내부적으로 **적절한 파드(Pod)**로 트래픽을 라우팅하여 최종적으로 백엔드 애플리케이션이 요청을 처리한다.
+</details>
+
+<details>
+<summary>개발자 배포 흐름 보기</summary>
 
 ### ✅ 개발자 배포 흐름
 1. 개발자가 **소스 코드를 Git에 Push**하면, **GitHub Actions**가 자동 실행된다.
 2. GitHub Actions는 **Dockerfile을 빌드**하여 애플리케이션 이미지를 생성한 후, 이를 **Amazon ECR (Elastic Container Registry)**에 업로드한다.
 3. 업로드된 최신 이미지를 기반으로 **Kubernetes에서 새로운 파드(Pod)**를 실행하여 백엔드 애플리케이션이 배포된다.
 4. 데이터베이스는 **Amazon RDS**를 사용하며, 백엔드 애플리케이션이 **RDS에 연결되어 데이터를 관리**한다.
+</details>
+
 <br>
 
-### 풀 오토스케일링: 파드 & 노드 자동 확장  
+### 오토스케일링: 파드 & 노드 자동 확장  
 
-🚀 **HPA(Horizontal Pod Autoscaler) + Cluster Autoscaler = 풀 오토스케일링**  
+🚀 **HPA(Horizontal Pod Autoscaler) + Cluster Autoscaler = 오토스케일링**  
 
-쿠버네티스에서는 **HPA**와 **Cluster Autoscaler**를 함께 사용하여 파드와 노드를 자동으로 확장 및 축소할 수 있습니다.  
+<details>
+<summary>오토스케일링에 대한 자세한 내용</summary>
+  
+<br>
+
+쿠버네티스에서는 <span style="font-size: 24px; font-weight: bold;">**HPA**</span>와 <span style="font-size: 24px; font-weight: bold;">**Cluster Autoscaler**</span>를 함께 사용하여 파드와 노드를 자동으로 확장 및 축소할 수 있습니다.
 
 ---
 
@@ -183,10 +205,12 @@
 
 ---
 
-### 📌 **풀 오토스케일링의 효과**  
+### 📌 **오토스케일링의 효과**  
 - 트래픽 변화에 따라 **자동으로 확장 및 축소**  
 - 불필요한 리소스 낭비 방지  
-- 서비스 안정성 및 가용성 보장  
+- 서비스 안정성 및 가용성 보장
+
+</details>
 
 ---
 
@@ -214,92 +238,6 @@
 ## 📧 도메인 주소
 [www.example.com](https://www.example.com)
 <br>
-
-[//]: # (### 일반 유저)
-
-[//]: # (#### ✍️ 로그인 및 회원가입)
-
-[//]: # (<details>)
-
-[//]: # (<summary>카카오 소셜 회원가입</summary>)
-
-[//]: # (  <img src="https://github.com/user-attachments/assets/90abeb2c-69b6-4000-a9ef-b3d8918deff8">)
-
-[//]: # (</details>)
-
-[//]: # ()
-[//]: # (<details>)
-
-[//]: # (<summary>구글 소셜 회원가입</summary>)
-
-[//]: # (  <img src="https://github.com/user-attachments/assets/6612aa6c-7815-475f-b769-64b4601c23df">)
-
-[//]: # (</details>)
-
-[//]: # ()
-[//]: # (<summary>카카오 소셜 로그인</summary>)
-
-[//]: # (  <img src="https://github.com/user-attachments/assets/90abeb2c-69b6-4000-a9ef-b3d8918deff8">)
-
-[//]: # (</details>)
-
-[//]: # ()
-[//]: # (<details>)
-
-[//]: # (<summary>구글 소셜 로그인 </summary>)
-
-[//]: # (  <img src="https://github.com/user-attachments/assets/6612aa6c-7815-475f-b769-64b4601c23df">)
-
-[//]: # (</details>)
-
-[//]: # ()
-[//]: # (#### ✍️ 마이페이지)
-
-[//]: # ()
-[//]: # ()
-[//]: # ()
-[//]: # (### 홈화면)
-
-[//]: # (<details>)
-
-[//]: # (  <summary> 홈화면 </summary>)
-
-[//]: # (  <img src="https://github.com/user-attachments/assets/0acddd87-a24c-4a11-98ac-344a3287763d">)
-
-[//]: # (</details>)
-
-[//]: # ()
-[//]: # (### 게시글)
-
-[//]: # (<details>)
-
-[//]: # (  <summary> 홈화면 </summary>)
-
-[//]: # (  <img src="https://github.com/user-attachments/assets/0acddd87-a24c-4a11-98ac-344a3287763d">)
-
-[//]: # (</details>)
-
-[//]: # ()
-[//]: # (### 프로젝트)
-
-[//]: # (<details>)
-
-[//]: # (  <summary> 홈화면 </summary>)
-
-[//]: # (  <img src="https://github.com/user-attachments/assets/0acddd87-a24c-4a11-98ac-344a3287763d">)
-
-[//]: # (</details>)
-
-[//]: # ()
-[//]: # (### 채팅)
-
-[//]: # (<details>)
-
-[//]: # (  <summary> 홈화면 </summary>)
-
-[//]: # (  <img src="https://github.com/user-attachments/assets/0acddd87-a24c-4a11-98ac-344a3287763d">)
-
-[//]: # (</details>)
 
 
 ## Git Commit Convention
