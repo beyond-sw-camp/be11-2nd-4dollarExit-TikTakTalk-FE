@@ -32,6 +32,9 @@
 
 ## 📝 프로젝트 배경 및 목적
 
+<details>
+<summary>필요한 정보와 인사이트를 교환하는 열린 커뮤니티가 되는 것</summary>
+
 > 현재 부트캠프에서는 각 기수별로 별도의 디스코드 채널이 운영되고 있어, 기수 간의 교류가 원활하지 않습니다.
 >
 > 이로 인해 학생들 간의 네트워킹이 제한되고, 다양한 경험과 지식을 공유할 기회가 부족한 상황입니다.
@@ -40,14 +43,18 @@
 >
 > 이를 통해 학생들이 편안한 분위기에서 질문하고 답변하며, 협업의 기회를 넓힐 수 있도록 돕습니다.
 >
-> TTT는 단순한 채팅 공간을 넘어, 부트캠프 학습 과정에서 **필요한 정보와 인사이트를 교환하는 열린 커뮤니티가 되는 것**을 목표로 합니다
+> TTT는 단순한 채팅 공간을 넘어, 부트캠프 학습 과정에서 **필요한 정보와 인사이트를 교환하는 열린 커뮤니티가 되는 것**을 목표로 합니다.
 
+</details>
  
 
 <br>
 
 ## 📝 프로젝트 개요
 
+<details>
+<summary>더보기...</summary>
+  
 >부트캠프에서 학습하는 동안 **기수 간의 교류가 부족**하여, 학생들 간의 원활한 소통이 어려운 문제를 해결하기 위해 **게시판과 실시간 채팅 기능**을 제공하는 **커뮤니티 플랫폼**을 개발하였습니다.
 >
 >이 플랫폼을 통해 **스터디 모집, 정보 공유, 고민 상담, 네트워킹** 등 다양한 활동이 가능하며, 보다 활발한 학습 환경과 **유대감 형성**을 지원합니다.
@@ -61,7 +68,51 @@
 >뿐만 아니라, **비욘드 SW캠프 레포지토리**에서 공통적으로 관리하는 프로젝트들을 보기 쉽고 편리하게 제공하여, 프로젝트 진행 시 이전 기수들의 레퍼런스를 참고하기가 더욱 용이해졌습니다.
 >
 >이를 통해 후배 기수들이 선배들의 작업물을 바탕으로 더 **효율적으로** 학습하고 발전할 수 있도록 돕습니다.
-<br>
+
+</details>
+  
+  <br>
+
+## 🎮 기술 스택
+
+### BACKEND
+![SPRING](https://img.shields.io/badge/Spring-green?style=for-the-badge&logo=Spring&logoColor=white)
+![SPRING BOOT](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=Spring%20Boot&logoColor=white)
+![SPRING SECURITY](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
+![SPRING DATA JPA](https://img.shields.io/badge/Spring_Data_JPA-13C100?style=for-the-badge&logo=Spring%20Boot&logoColor=white)
+![WEBSOCKET](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
+![STOMP](https://img.shields.io/badge/STOMP-010101?style=for-the-badge&logo=messenger&logoColor=white)
+![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white)
+![HIBERNATE](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![DOCKER](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+### FRONTEND
+![Vue.js](https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1867C0?style=for-the-badge&logo=css3&logoColor=white)
+![AXIOS](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+![VUE ROUTER](https://img.shields.io/badge/Vue_Router-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
+![VUETIFY](https://img.shields.io/badge/Vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=#1867C0)
+###  DB
+![mariadb](https://img.shields.io/badge/mariadb-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
+![amazons3](https://img.shields.io/badge/amazons3-569A31?style=for-the-badge)
+![RABBITMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
+
+### 외부API
+![GOOGLE](https://img.shields.io/badge/Google-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![KAKAO](https://img.shields.io/badge/Kakao_API-FFCD00?style=for-the-badge&logo=kakao&logoColor=black)
+![COOLSMS](https://img.shields.io/badge/Cool_SMS-2E9AFE?style=for-the-badge&logo=coolsms&logoColor=black)
+
+### 협업도구
+![Notion](https://img.shields.io/badge/notion-181717?style=for-the-badge&logo=notion&logoColor=white)
+![Git](https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white)
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+&nbsp;![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
+![POSTMAN](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+
 
 ## ⚙️요구사항 정의서
 [요구사항 정의서](https://www.notion.so/180da9f139ca801c98c7c26eb1e2af31?v=180da9f139ca81d08b86000c2c26c05e)
@@ -72,7 +123,7 @@
 <br>
 
 ## ⚙️ ERD 설계도    
-<img width="1152" alt="image" src="Hub (1).png">
+[ERD 설계도 링크](https://www.erdcloud.com/d/62rYxocZt6sFHzFyG)
 
 ## ⚙️ 시스템 아키텍처 
 <img width="1152" alt="image" src="./aws_arch.drawio.png">
@@ -106,52 +157,54 @@
 4. 데이터베이스는 **Amazon RDS**를 사용하며, 백엔드 애플리케이션이 **RDS에 연결되어 데이터를 관리**한다.
 <br>
 
-## ⚙️ 풀 오토스케일링
+### 풀 오토스케일링: 파드 & 노드 자동 확장  
 
-### 🚀 파드 & 노드 오토스케일링
+🚀 **HPA(Horizontal Pod Autoscaler) + Cluster Autoscaler = 풀 오토스케일링**  
 
-**HPA(Horizontal Pod Autoscaler) + Cluster Autoscaler = 풀 오토스케일링**
-
-쿠버네티스에서는 **HPA**와 **Cluster Autoscaler**를 함께 사용하여 파드와 노드를 자동으로 확장 및 축소할 수 있다.
+쿠버네티스에서는 **HPA**와 **Cluster Autoscaler**를 함께 사용하여 파드와 노드를 자동으로 확장 및 축소할 수 있습니다.  
 
 ---
 
-### 📌 트래픽 증가 상황
-1. **메트릭 서버**가 파드와 노드의 CPU, 메모리 사용량을 실시간으로 수집한다.
-2. 파드가 설정한 **최대 리소스(CPU/메모리) 사용량을 초과**하면 **HPA가 자동으로 파드를 생성**한다.
-3. **새로운 파드를 배치할 공간이 부족하면**, **Cluster Autoscaler가 자동으로 노드를 생성**한다.
-4. 추가된 노드에 새로운 파드가 배포되면서 서비스가 확장된다 (**Scale Out**).
+## ✅ 트래픽 증가 상황  
+1️⃣ **메트릭 서버**가 파드와 노드의 **CPU, 메모리 사용량을 실시간 수집**  
+2️⃣ **파드 리소스 한계 초과** 시, **HPA가 자동으로 파드를 생성**  
+3️⃣ **새 파드를 배치할 공간이 부족하면** → **Cluster Autoscaler가 자동으로 노드를 생성**  
+4️⃣ **추가된 노드에 새로운 파드가 배포되면서 서비스 확장 (Scale Out)**  
 
 ---
 
-### 📌 트래픽 감소 상황
-1. **HPA가 자동으로 파드를 삭제**하여 리소스를 줄인다 (**Scale In**).
-2. 파드가 줄어들어 **비어 있는 노드가 생기면**, **Cluster Autoscaler가 자동으로 노드를 삭제**한다.
-3. 만약 실행 중인 파드가 있는 노드를 삭제해야 할 경우:
-   - 쿠버네티스가 해당 **파드를 Eviction(퇴출)** 한다.
-   - **Deployment/ReplicaSet**이 파드 개수를 유지하기 위해 **다른 노드에서 재생성**한다.
-   - 이후 남은 **노드를 안전하게 삭제**한다.
-
-이와 같이 **HPA**와 **Cluster Autoscaler**를 활용하면 **트래픽 변화에 따라 자동으로 확장 및 축소**되는 동적인 시스템을 구축할 수 있다.
+## ✅ 트래픽 감소 상황  
+1️⃣ **HPA가 자동으로 파드를 삭제**하여 리소스 절감 (Scale In)  
+2️⃣ **비어 있는 노드 발생 시** → **Cluster Autoscaler가 자동으로 노드를 삭제**  
+3️⃣ **실행 중인 파드를 포함한 노드 삭제 필요 시**  
+   - 쿠버네티스가 해당 파드를 **Eviction(퇴출)**  
+   - **Deployment/ReplicaSet이 다른 노드에서 파드 재생성**  
+   - 이후 **안전하게 노드 삭제**  
 
 ---
 
+### 📌 **풀 오토스케일링의 효과**  
+- 트래픽 변화에 따라 **자동으로 확장 및 축소**  
+- 불필요한 리소스 낭비 방지  
+- 서비스 안정성 및 가용성 보장  
 
+---
 
+### 📊 **오토스케일링 테스트**  
+<details>
+<summary>Preview</summary>
+  
+🔹 **Pod 오토스케일링**  
+✅ 파드 증가 → <img width="1152" alt="image" src=https://github.com/beyond-sw-camp/be11-3rd-4dollarExit-TikTakTalk-FE/blob/main/pod%20add.png>  
+✅ 파드 감소 → <img width="1152" alt="image" src=https://github.com/beyond-sw-camp/be11-3rd-4dollarExit-TikTakTalk-FE/blob/main/pod%20down.png>  
 
-### pod 오토스케일링
-#### pod 증가 확인
-<img width="1152" alt="image" src=https://github.com/beyond-sw-camp/be11-3rd-4dollarExit-TikTakTalk-FE/blob/main/pod%20add.png>
+🔹 **EC2 오토스케일링**  
+✅ 노드 증가 → <img width="1152" alt="image" src=https://github.com/beyond-sw-camp/be11-3rd-4dollarExit-TikTakTalk-FE/blob/main/node%20scaleout.png>  
+✅ 노드 감소 → <img width="1152" alt="image" src=https://github.com/beyond-sw-camp/be11-3rd-4dollarExit-TikTakTalk-FE/blob/main/node%20scalein.png>
 
-#### pod 감소 확인
-<img width="1152" alt="image" src=https://github.com/beyond-sw-camp/be11-3rd-4dollarExit-TikTakTalk-FE/blob/main/pod%20down.png>
+이와 같이 **HPA + Cluster Autoscaler**를 활용하면 **동적으로 확장되는 쿠버네티스 환경**을 구축할 수 있습니다! 🚀
 
-### ec2 오토스케일링
-#### node 증가 확인
-<img width="1152" alt="image" src=https://github.com/beyond-sw-camp/be11-3rd-4dollarExit-TikTakTalk-FE/blob/main/node%20scaleout.png>
-
-#### node 감소 확인
-<img width="1152" alt="image" src=https://github.com/beyond-sw-camp/be11-3rd-4dollarExit-TikTakTalk-FE/blob/main/node%20scalein.png>
+</details>
 
 ## 🔎 프로젝트 시연
 [프로젝트 시연](https://github.com/beyond-sw-camp/be11-2nd-4dollarExit-TikTakTalk-FE/wiki)
@@ -247,49 +300,6 @@
 [//]: # (  <img src="https://github.com/user-attachments/assets/0acddd87-a24c-4a11-98ac-344a3287763d">)
 
 [//]: # (</details>)
-
-
-## 🎮 기술 스택
-
-### BACKEND
-![SPRING](https://img.shields.io/badge/Spring-green?style=for-the-badge&logo=Spring&logoColor=white)
-![SPRING BOOT](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=Spring%20Boot&logoColor=white)
-![SPRING SECURITY](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-![SPRING DATA JPA](https://img.shields.io/badge/Spring_Data_JPA-13C100?style=for-the-badge&logo=Spring%20Boot&logoColor=white)
-![WEBSOCKET](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white)
-![STOMP](https://img.shields.io/badge/STOMP-010101?style=for-the-badge&logo=messenger&logoColor=white)
-![Gradle](https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=json-web-tokens&logoColor=white)
-![HIBERNATE](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
-![DOCKER](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-### FRONTEND
-![Vue.js](https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1867C0?style=for-the-badge&logo=css3&logoColor=white)
-![AXIOS](https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
-![VUE ROUTER](https://img.shields.io/badge/Vue_Router-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
-![VUETIFY](https://img.shields.io/badge/Vuetify-1867C0?style=for-the-badge&logo=vuetify&logoColor=#1867C0)
-###  DB
-![mariadb](https://img.shields.io/badge/mariadb-003545?style=for-the-badge&logo=mariadb&logoColor=white)
-![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
-![amazons3](https://img.shields.io/badge/amazons3-569A31?style=for-the-badge)
-![RABBITMQ](https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white)
-
-### 외부API
-![GOOGLE](https://img.shields.io/badge/Google-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![KAKAO](https://img.shields.io/badge/Kakao_API-FFCD00?style=for-the-badge&logo=kakao&logoColor=black)
-![COOLSMS](https://img.shields.io/badge/Cool_SMS-2E9AFE?style=for-the-badge&logo=coolsms&logoColor=black)
-
-### 협업도구
-![Notion](https://img.shields.io/badge/notion-181717?style=for-the-badge&logo=notion&logoColor=white)
-![Git](https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=Github&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-&nbsp;![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
-![POSTMAN](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-
-
 
 
 ## Git Commit Convention
